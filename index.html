@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  每日 AI 情報 網頁範本
+  build_ai_page.py 會把 content.json 的內容以 JSON 塞進 {"day":1,"date":"2026-07-14","weekday":"週二","headline":"本週 AI 圈的主旋律從「比誰模型大」變成「比誰更好用、更便宜、更可靠」——而 7 月 9 日更是 AI 史上頭一遭，三大前沿實驗室同一天各自推出可公開使用的頂級模型。","top":[{"tag":"新模型","title":"三大實驗室同一天發模型：OpenAI、xAI、Meta 一起出招","body":"7/9 這天，OpenAI 公開 GPT-5.6（旗艦 Sol、半價的 Terra、快速的 Luna 三個等級），xAI 推 Grok 4.5，Meta 則發表 Muse Spark 1.1，同一天上架。這是史上第一次三家頂尖實驗室的最新旗艦模型同日開放給大眾用。","analogy":"像三家頂尖晶圓廠約好同一天各自量產新製程——過去是隔幾個月才有一家跳出來，現在變成同場競技。","why":"對你這種「用 AI 工具」的人是好事：選擇更多、而且便宜的中階款（像 Terra、Anthropic 的 Sonnet 5）性價比大跳升，不一定要用最貴的旗艦。","source_name":"ThursdAI（2026-07 彙整）","source_url":"https://thursdai.news/releases/2026-07"},{"tag":"產業","title":"OpenAI 準備上市，估值傳約 7300 億美元","body":"OpenAI 正準備向美國證管會遞交機密上市（IPO）文件，找了高盛與摩根士丹利承銷，最快 9 月遞件，私募市場估值約 7300 億美元。","analogy":"等於一家還在燒錢擴產的公司要掛牌上市——資本市場開始把 AI 當成能長期賺錢的產業，不只是燒錢的研發競賽。","why":"AI 從「技術比拚」進入「資本市場」階段，代表這波不是短期熱潮；你選用的工具背後公司會更在意營收與穩定，長期供應較有保障。","source_name":"llm-stats（AI 新聞彙整）","source_url":"https://llm-stats.com/ai-news"},{"tag":"基礎設施","title":"算力變稀缺資源：xAI 每月花 12.5 億美元向 Anthropic 租算力","body":"SpaceX 的上市文件揭露，xAI 第一季虧損 24 億美元，並簽下向 Anthropic 承租 300 百萬瓦（MW）運算產能的合約，每月 12.5 億美元、一路到 2029 年 5 月。","analogy":"算力就像產線的「產能」——現在連對手之間都要互相租產能才夠用，等於台積電把部分產能租給別家來塞滿訂單。","why":"這解釋了為什麼 AI 服務有時會排隊、限量或漲價：背後的運算資源是真的稀缺又燒錢，不是廠商小氣。","source_name":"llm-stats（AI 新聞彙整）","source_url":"https://llm-stats.com/ai-news"},{"tag":"政策","title":"監管界替 AI 選了一個關鍵字：「系統性」","body":"本週歐洲央行要求每一家重要的歐洲銀行在 10/31 前證明自己扛得住 AI 帶來的衝擊；英國則把 AWS、Google Cloud、微軟、甲骨文四大雲端商，納入「大到會拖垮金融體系」等級的監管。","analogy":"等於官方把幾家雲端大廠列為「關鍵基礎設施」來管——就像電網、自來水那種一旦出事全國都受影響的等級。","why":"AI 開始被當成會影響整體社會穩定的基礎設施在監管，未來 AI 產品（含硬體）要面對的合規要求只會變多、不會變少。","source_name":"Open Data Science（本週 AI 回顧）","source_url":"https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-july-6-july-12-2026/"}],"industry":[{"text":"多模態（Multimodal）成主流：新一批模型能在同一個脈絡視窗裡同時處理文字、圖片、聲音、影片，不用分開餵。","source_name":"crescendo.ai","source_url":"https://www.crescendo.ai/news/latest-ai-news-and-updates"},{"text":"人形機器人叩關資本市場：Agility 以 SPAC 方式上市（估值約 25 億美元），中國宇樹（Unitree）通過上海 IPO 審核。","source_name":"Open Data Science","source_url":"https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-july-6-july-12-2026/"},{"text":"Anthropic 於 7/1 在美國解除出口管制後，全球恢復供應 Fable 5 與 Mythos 5；並推出 Sonnet 5，效能逼近旗艦 Opus 4.8，8/31 前優惠價 $2／$10（每百萬 token）。","source_name":"llm-stats","source_url":"https://llm-stats.com/llm-updates"},{"text":"Google 在迦納設立「非洲應用 AI 實驗室」，提供非洲研究者與創業者早期技術與指導。","source_name":"crescendo.ai","source_url":"https://www.crescendo.ai/news/latest-ai-news-and-updates"}],"term":{"zh":"脈絡視窗","en":"Context Window","explain":"AI 一次能「同時看到並記在腦中」的資訊量上限，用 token（詞元，大約可想成字或詞的單位）來計。超過這個上限，最前面的內容就會被忘掉。","analogy":"像你工作桌的桌面大小——桌面越大，能同時攤開的圖紙、規格書、BOM 表越多，不用一直收一張才能拿下一張。脈絡視窗越大，AI 越能一次「攤開」整份文件來看。","why":"這週 Meta 的 Muse Spark 1.1 主打「百萬 token 脈絡視窗」，等於把桌面擴大到能一次攤開整個專案的文件。視窗越大，你就能把整本手冊、整份規格一次丟給它，讓它綜觀全局回答，而不是切成小段一問再問。"}} 佔位符。
+  content.json 結構：
+  {
+    "day": 1,                     // 第幾期（整數）
+    "date": "2026-07-14",         // 日期
+    "weekday": "週一",            // 星期
+    "headline": "一句話總結今天 AI 圈最重要的事",
+    "top": [                       // 今日重點：3-4 則
+      {
+        "tag": "新模型",           // 分類標籤：新模型/工具/產業/基礎設施/政策/研究…
+        "title": "中文標題",
+        "body": "白話說明，2-4 句",
+        "analogy": "硬體/產線比喻（可省略，留空字串即不顯示）",
+        "why": "為什麼你該知道（1 句，可省略）",
+        "source_name": "來源名稱",
+        "source_url": "https://..."
+      }
+    ],
+    "industry": [                  // 產業動態：2-4 則一句話
+      { "text": "一句話動態", "source_name": "來源", "source_url": "https://..." }
+    ],
+    "term": {                      // 今日一詞
+      "zh": "中文名",
+      "en": "English Name",
+      "explain": "白話解釋",
+      "analogy": "硬體比喻（可省略）",
+      "why": "為什麼重要（可省略）"
+    }
+  }
+  純前端、單檔、無外部相依；深淺色自動跟隨系統。
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日 AI 情報</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1a1c1f; --sub:#5a6069; --line:#e6e8ec;
+    --accent:#3b5bdb; --accent-soft:#e7ecfb; --chip:#eef1f6; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0f1115; --card:#181b21; --ink:#e8eaed; --sub:#9aa1ac; --line:#262a31;
+      --accent:#8aa2ff; --accent-soft:#1e2740; --chip:#232833; --shadow:0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased;font-size:16px}
+  .wrap{max-width:680px;margin:0 auto;padding:20px 16px 64px}
+  header{padding:8px 2px 18px}
+  .kicker{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.04em}
+  h1{font-size:26px;margin:6px 0 4px;font-weight:800;letter-spacing:-.01em}
+  .date{font-size:14px;color:var(--sub)}
+  .headline{margin:16px 0 8px;padding:16px 18px;background:var(--accent-soft);border-radius:14px;
+    font-size:16px;font-weight:600;color:var(--ink);border:1px solid var(--line)}
+  .sec-title{font-size:14px;font-weight:800;color:var(--sub);letter-spacing:.06em;
+    text-transform:none;margin:28px 4px 12px;display:flex;align-items:center;gap:8px}
+  .sec-title::before{content:"";width:4px;height:16px;background:var(--accent);border-radius:2px;display:inline-block}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;
+    margin-bottom:12px;box-shadow:var(--shadow)}
+  .chip{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);
+    background:var(--chip);padding:3px 10px;border-radius:999px;margin-bottom:8px}
+  .card h3{font-size:18px;margin:2px 0 8px;font-weight:750;line-height:1.4}
+  .card p{margin:6px 0;font-size:15.5px}
+  .analogy{background:var(--chip);border-radius:10px;padding:9px 12px;font-size:14.5px;color:var(--ink);margin:10px 0}
+  .analogy b{color:var(--accent)}
+  .why{font-size:14px;color:var(--sub);margin-top:8px}
+  .why b{color:var(--ink)}
+  .src{font-size:13px;margin-top:10px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  ul.ind{list-style:none;padding:0;margin:0}
+  ul.ind li{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:12px 14px;margin-bottom:8px;font-size:15px;box-shadow:var(--shadow)}
+  ul.ind li a{color:var(--accent);text-decoration:none;font-size:13px}
+  .term{background:linear-gradient(135deg,var(--accent-soft),var(--card));
+    border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+  .term .name{font-size:20px;font-weight:800}
+  .term .en{font-size:14px;color:var(--sub);font-weight:600;margin-left:6px}
+  .term p{margin:8px 0;font-size:15.5px}
+  footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--sub);text-align:center;line-height:1.8}
+</style>
+<div class="wrap">
+  <header>
+    <div class="kicker">每日 AI 情報</div>
+    <h1 id="h-title">AI 每日速報</h1>
+    <div class="date" id="h-date"></div>
+  </header>
+  <div class="headline" id="headline"></div>
+
+  <div class="sec-title">今日重點</div>
+  <div id="top"></div>
+
+  <div class="sec-title">產業動態</div>
+  <ul class="ind" id="industry"></ul>
+
+  <div class="sec-title">今日一詞</div>
+  <div id="term"></div>
+
+  <footer id="footer"></footer>
+</div>
+<script>
+  const D = {"day":1,"date":"2026-07-14","weekday":"週二","headline":"本週 AI 圈的主旋律從「比誰模型大」變成「比誰更好用、更便宜、更可靠」——而 7 月 9 日更是 AI 史上頭一遭，三大前沿實驗室同一天各自推出可公開使用的頂級模型。","top":[{"tag":"新模型","title":"三大實驗室同一天發模型：OpenAI、xAI、Meta 一起出招","body":"7/9 這天，OpenAI 公開 GPT-5.6（旗艦 Sol、半價的 Terra、快速的 Luna 三個等級），xAI 推 Grok 4.5，Meta 則發表 Muse Spark 1.1，同一天上架。這是史上第一次三家頂尖實驗室的最新旗艦模型同日開放給大眾用。","analogy":"像三家頂尖晶圓廠約好同一天各自量產新製程——過去是隔幾個月才有一家跳出來，現在變成同場競技。","why":"對你這種「用 AI 工具」的人是好事：選擇更多、而且便宜的中階款（像 Terra、Anthropic 的 Sonnet 5）性價比大跳升，不一定要用最貴的旗艦。","source_name":"ThursdAI（2026-07 彙整）","source_url":"https://thursdai.news/releases/2026-07"},{"tag":"產業","title":"OpenAI 準備上市，估值傳約 7300 億美元","body":"OpenAI 正準備向美國證管會遞交機密上市（IPO）文件，找了高盛與摩根士丹利承銷，最快 9 月遞件，私募市場估值約 7300 億美元。","analogy":"等於一家還在燒錢擴產的公司要掛牌上市——資本市場開始把 AI 當成能長期賺錢的產業，不只是燒錢的研發競賽。","why":"AI 從「技術比拚」進入「資本市場」階段，代表這波不是短期熱潮；你選用的工具背後公司會更在意營收與穩定，長期供應較有保障。","source_name":"llm-stats（AI 新聞彙整）","source_url":"https://llm-stats.com/ai-news"},{"tag":"基礎設施","title":"算力變稀缺資源：xAI 每月花 12.5 億美元向 Anthropic 租算力","body":"SpaceX 的上市文件揭露，xAI 第一季虧損 24 億美元，並簽下向 Anthropic 承租 300 百萬瓦（MW）運算產能的合約，每月 12.5 億美元、一路到 2029 年 5 月。","analogy":"算力就像產線的「產能」——現在連對手之間都要互相租產能才夠用，等於台積電把部分產能租給別家來塞滿訂單。","why":"這解釋了為什麼 AI 服務有時會排隊、限量或漲價：背後的運算資源是真的稀缺又燒錢，不是廠商小氣。","source_name":"llm-stats（AI 新聞彙整）","source_url":"https://llm-stats.com/ai-news"},{"tag":"政策","title":"監管界替 AI 選了一個關鍵字：「系統性」","body":"本週歐洲央行要求每一家重要的歐洲銀行在 10/31 前證明自己扛得住 AI 帶來的衝擊；英國則把 AWS、Google Cloud、微軟、甲骨文四大雲端商，納入「大到會拖垮金融體系」等級的監管。","analogy":"等於官方把幾家雲端大廠列為「關鍵基礎設施」來管——就像電網、自來水那種一旦出事全國都受影響的等級。","why":"AI 開始被當成會影響整體社會穩定的基礎設施在監管，未來 AI 產品（含硬體）要面對的合規要求只會變多、不會變少。","source_name":"Open Data Science（本週 AI 回顧）","source_url":"https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-july-6-july-12-2026/"}],"industry":[{"text":"多模態（Multimodal）成主流：新一批模型能在同一個脈絡視窗裡同時處理文字、圖片、聲音、影片，不用分開餵。","source_name":"crescendo.ai","source_url":"https://www.crescendo.ai/news/latest-ai-news-and-updates"},{"text":"人形機器人叩關資本市場：Agility 以 SPAC 方式上市（估值約 25 億美元），中國宇樹（Unitree）通過上海 IPO 審核。","source_name":"Open Data Science","source_url":"https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-july-6-july-12-2026/"},{"text":"Anthropic 於 7/1 在美國解除出口管制後，全球恢復供應 Fable 5 與 Mythos 5；並推出 Sonnet 5，效能逼近旗艦 Opus 4.8，8/31 前優惠價 $2／$10（每百萬 token）。","source_name":"llm-stats","source_url":"https://llm-stats.com/llm-updates"},{"text":"Google 在迦納設立「非洲應用 AI 實驗室」，提供非洲研究者與創業者早期技術與指導。","source_name":"crescendo.ai","source_url":"https://www.crescendo.ai/news/latest-ai-news-and-updates"}],"term":{"zh":"脈絡視窗","en":"Context Window","explain":"AI 一次能「同時看到並記在腦中」的資訊量上限，用 token（詞元，大約可想成字或詞的單位）來計。超過這個上限，最前面的內容就會被忘掉。","analogy":"像你工作桌的桌面大小——桌面越大，能同時攤開的圖紙、規格書、BOM 表越多，不用一直收一張才能拿下一張。脈絡視窗越大，AI 越能一次「攤開」整份文件來看。","why":"這週 Meta 的 Muse Spark 1.1 主打「百萬 token 脈絡視窗」，等於把桌面擴大到能一次攤開整個專案的文件。視窗越大，你就能把整本手冊、整份規格一次丟給它，讓它綜觀全局回答，而不是切成小段一問再問。"}};
+  const esc = s => String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  document.title = "每日 AI 情報 #" + (D.day||"") + " · " + (D.date||"");
+  document.getElementById("h-title").textContent = "AI 每日速報 #" + (D.day||"");
+  document.getElementById("h-date").textContent = (D.date||"") + (D.weekday?("（"+D.weekday+"）"):"");
+  document.getElementById("headline").textContent = D.headline||"";
+
+  document.getElementById("top").innerHTML = (D.top||[]).map(t=>`
+    <div class="card">
+      ${t.tag?`<span class="chip">${esc(t.tag)}</span>`:""}
+      <h3>${esc(t.title)}</h3>
+      <p>${esc(t.body)}</p>
+      ${t.analogy?`<div class="analogy"><b>用硬體比喻：</b>${esc(t.analogy)}</div>`:""}
+      ${t.why?`<div class="why"><b>為什麼你該知道：</b>${esc(t.why)}</div>`:""}
+      ${t.source_url?`<div class="src">來源：<a href="${esc(t.source_url)}" target="_blank" rel="noopener">${esc(t.source_name||t.source_url)}</a></div>`:""}
+    </div>`).join("");
+
+  document.getElementById("industry").innerHTML = (D.industry||[]).map(i=>`
+    <li>${esc(i.text)} ${i.source_url?`· <a href="${esc(i.source_url)}" target="_blank" rel="noopener">${esc(i.source_name||"來源")}</a>`:""}</li>`).join("");
+
+  const tm = D.term||{};
+  document.getElementById("term").innerHTML = `
+    <div class="term">
+      <div class="name">${esc(tm.zh||"")}<span class="en">${esc(tm.en||"")}</span></div>
+      <p>${esc(tm.explain||"")}</p>
+      ${tm.analogy?`<div class="analogy"><b>用硬體比喻：</b>${esc(tm.analogy)}</div>`:""}
+      ${tm.why?`<p class="why"><b>為什麼重要：</b>${esc(tm.why)}</p>`:""}
+    </div>`;
+
+  document.getElementById("footer").innerHTML =
+    "每天自動更新 · 由 Claude 依當日公開新聞整理，僅供快速掌握趨勢，重要決策請點來源查證<br>#" +
+    (D.day||"") + " · " + (D.date||"");
+</script>
